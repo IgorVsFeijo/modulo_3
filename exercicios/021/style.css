@@ -52,7 +52,7 @@ main{
     margin-top: 5px;
 }
 
-section{
+div{
     margin: auto;
     background-color: #e8d8eb;
     
@@ -70,11 +70,11 @@ h2{
     font-size: 2.5em;
 }
 
-section > article {
+div > article {
     display: inline-block;
 }
 
-section#descobertas > aside {
+div#descobertas > aside {
     display: inline-block;
     width: 49%;
     box-sizing: content-box;
@@ -82,11 +82,11 @@ section#descobertas > aside {
     margin: autop;
 }
 
-section#preferidas {
+div#preferidas {
     border: none;
 }
 
-section#preferidas > article{
+div#preferidas > article{
     width: 32%;
     box-sizing: content-box;
     border: 2px solid #140815;

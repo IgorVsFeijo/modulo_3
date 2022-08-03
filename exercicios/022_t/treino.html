@@ -49,24 +49,70 @@
 
         article{
             margin: auto;
-            display: block;
-            padding: 30px 8%;
-            max-width: 926px;
+            display: flex;
+            max-width: 950px;
+            justify-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
 
         }
 
         main div{
-            display: inline-block;
+            display: inline-table;
             width: 300px;
-            height: 300px;
+            height: 350px;
             background-color: white;
             margin: 5px 2.5px;
             transition-duration: 0.1s;         
         }
 
-        main div.barbara:hover{
-            background-image: url('https://pbs.twimg.com/profile_images/1545955088937762817/Wj0SYNnt_400x400.jpg');
+        main div:hover{
             border: 3px solid white;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        div.barbara:hover{
+            background-image: url('https://i.pinimg.com/originals/74/41/f7/7441f7e34218ed2918ddebc5b2ab549d.jpg');
+        }
+
+        div.milo:hover{
+            background-image: url('https://i.pinimg.com/originals/b9/28/5b/b9285b58237cae54366167ccf4a7e3d2.jpg');
+        }
+
+        div.olivier:hover{
+            background-image: url('https://i.pinimg.com/originals/ed/30/86/ed30867555c32e8aca1e69900dfae804.jpg');
+        }
+
+        div.wanderley:hover{
+            background-image: url('https://pbs.twimg.com/media/FYZHunQX0AEZ-DP.jpg');
+            background-size: 200%;
+            background-position: right center;
+            transition-duration: 0s;
+        }
+
+        div.amelie:hover{
+            background-image: url('https://i.pinimg.com/originals/33/75/a4/3375a4ac79ba6962874987cb62329067.jpg');
+        }
+
+        div.noralma:hover{
+            background-image: url('https://d3ugyf2ht6aenh.cloudfront.net/stores/974/635/products/noiva-fantasma1-a265a92ef2aebd875c16573850435252-240-0.jpg');
+            background-position: bottom center;
+        }
+
+        div.barto:hover{
+            background-image: url('imagens/Quadro_Bartô.webp');
+        }
+
+        div.faroleiro:hover{
+            background-image: url('imagens/OSNI_Ep_6.webp');
+            background-size: auto 100%;
+            background-image: center;
+        }
+
+        div.amora:hover{
+            background-image: url('imagens/Desenho_amigo_imaginário.webp');
+            background-position: bottom;
         }
 
         main p{
@@ -75,7 +121,7 @@
             text-indent: 1em;
             text-align: justify;
             font-style: italic;
-            height: 215px;
+            height: 265px;
             
             display: block;
             margin-inline-start: 0px;
@@ -98,8 +144,8 @@
             display: block;
         }
 
-        div:hover > p{
-            display: none;
+        div:hover p{
+           color: transparent; 
         }
 
         main p::before{
@@ -110,6 +156,13 @@
         main p::after{
             content: " ❞";
             font-size: 2em;
+        }
+
+        a:hover{
+            background-color: #01261C;
+            color: white;
+            text-decoration: underline;
+            transition-duration: 0.5s;
         }
 
 
@@ -125,34 +178,53 @@
     </header>
     <main>
         <article>
+            
+            <div class="milo">
+                    <p>Miguel [...] eu vou tentar ao máximo trazer você de volta, custe o que custar.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Milo_Castello">Milo Castello</a>
+            </div>
+
             <div class="barbara">
                 <p>Todos esses anos eu atendi o pedido de Bartô, mas chega uma hora que não dá mais [...] Quem derá ocê fosse Miguel... </p>
 
                 <a href="https://ordemparanormal.fandom.com/wiki/B%C3%A1rbara_Lima">Bárbara Lima</a>
             </div>
-            <div class="milo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
-            </div>
+
             <div class="olivier">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+                    <p>Meu coração tá dividido entre você e minha irmã.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Olivier_Florence">Olivier Florence</a>
             </div>
             <div class="wanderley">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+                    <p>Se alguma coisa acontecer comigo, eu quero que vocês liguem pra esse número, e falem que o [...] mandou falar com a Ordem.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Wanderley_Nascimento_de_Jesus_Maria">Wanderley Nascimento</a>
             </div>
             <div class="amelie">
-                <p>Eu sou muito inteligente, linda, perfeita e não tenho defeito nenhum.</p>
+                    <p>Eu sou muito inteligente, linda, perfeita e não tenho defeito nenhum.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Amelie_Florence">Amelie Florence</a>
             </div>
             <div class="noralma">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+                    <p>Se você realmente me ama, por que você quer destruir a minha vida?</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Noralma_Moretti">Noralma Moretti</a>
             </div>
             <div class="barto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+                    <p>Não importa o que os outros achem. O seu irmão e você são reais.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Bart%C3%B4_Castello">Bartô Castello</a>
             </div>
-            <div class="montel">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+            <div class="faroleiro">
+                    <p>O sino! O segredo! O segredo! Escuta o chamado! Escuta o chamado! O segredo tem que ser mantido! O segredo tem que ser mantido!</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Celestino_Vurtoren">Celestino Vurtoren</a>
             </div>
             <div class="amora">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis impedit, quam sapiente fugiat inventore quis deleniti voluptas voluptatum, autem harum animi error libero distinctio. Suscipit soluta neque architecto vero cum.</p>
+                    <p>Preciso ir até ele ou ele vai levar mais alguém.</p>
+
+                <a href="https://ordemparanormal.fandom.com/wiki/Amora_Aleno">Amora Aleno</a>
             </div>
         </article>
     </main>
