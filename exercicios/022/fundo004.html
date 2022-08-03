@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: rgb(138, 133, 147);  
+        }
+        article{
+            width: 300px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        div{
+            height: 300px;
+            margin: 10px 0px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            background-image: url('imagens/anfitriao.webp');
+            background-size: 100px;
+            background-repeat: no-repeat;
+        }
+
+        article.left > div{
+            background-position-x: left;
+        }
+
+        article.center > div{
+            background-position-x: center;
+        }
+
+        article.right > div{
+            background-position-x: right;
+        }
+
+        div.t{
+            background-position-y: top;
+        }
+
+        div.c{
+            background-position-y: center;
+        }
+
+        div.b{
+            background-position-y: bottom;
+        }
+    </style>
+
+    <title>Posicionamento</title>
+</head>
+<body>
+    
+    <article class="left">
+        <div class="t">
+
+        </div>
+        <div class="c">
+
+        </div>
+        <div class="b">
+
+        </div>
+    </article>
+
+    <article class="center">
+        <div class="t">
+
+        </div>
+        <div class="c">
+
+        </div>
+        <div class="b">
+
+        </div>
+    </article>
+
+    <article class="right">
+        <div class="t">
+
+        </div>
+        <div class="c">
+
+        </div>
+        <div class="b">
+
+        </div>
+    </article>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            min-width: 1160px;
+        }
+        div.bloco{
+            height: 200px;
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            background-image: url('imagens/wallpaper002.jpg');
+        }
+
+        article{
+            display: inline-block;
+            width: 300;
+        }
+
+        article.left > div{
+            background-position-x: left;
+        }
+
+        article.center > div{
+            background-position-x: center;
+        }
+
+        article.right > div{
+            background-position-x: right;
+        }
+
+        div.t{
+            background-position-y: top;
+        }
+
+        div.c{
+            background-position-y: center;
+        }
+
+        div.b{
+            background-position-y: bottom;
+        }
+
+    </style>
+
+    <title>Posicionamento de Fundo</title>
+</head>
+<body>
+    <article class="left">
+        <div class="bloco t">
+        </div>
+        <div class="bloco c">
+        
+        </div>
+        <div class="bloco b">
+        
+        </div>
+        
+    </article>
+
+    <article class="center">
+        <div class="bloco t">
+        </div>
+        <div class="bloco c">
+        
+        </div>
+        <div class="bloco b">
+        
+        </div>
+       
+    </article>
+
+    <article class="right">
+        <div class="bloco t">
+        </div>
+        <div class="bloco c">
+        
+        </div>
+        <div class="bloco b">
+        
+        </div>
+        
+    </article>
+</body>
+</html>
