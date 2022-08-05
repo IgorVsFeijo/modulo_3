@@ -14,18 +14,30 @@
 
         body{
             height: 100vh;
+            width: 100vw;
+
+            position: relative;
         }
 
-        div{
-            margin: 13vh auto;
-            background-image: url('https://i.pinimg.com/564x/d1/86/2f/d1862f0e4ad4165177cde6f4befc5d2b.jpg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            max-width: min-content;
-            max-height: min-content;
-            min-width: 88%;
-            height: 72%;
-}
+        img{
+
+            border: 5px solid rgb(210 221 209 / 86%);
+
+            border-radius: 8px 0px 8px 0px;
+
+            box-shadow: 8px 5px 7px rgba(0, 0, 0, 0.152);
+
+            width: 70%;
+            max-height: 80%;
+
+            max-width: max-content;
+
+            position: relative;
+            
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
         }
 
     </style>
@@ -33,7 +45,10 @@
     <title>Contain e Cover</title>
 </head>
 <body>
-    <div>
-    </div>
+
+        <picture>
+            <img src="https://i.pinimg.com/564x/d1/86/2f/d1862f0e4ad4165177cde6f4befc5d2b.jpg" alt="">
+        </picture>
+    
 </body>
 </html>
